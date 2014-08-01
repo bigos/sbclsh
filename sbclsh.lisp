@@ -27,10 +27,11 @@
   (declare (type string str))
   (format t "~A~%" str))
 
-(defun print-number-and-strings (num str1 str2)
+(defun print-number-and-strings (num str1 str2 char-or-str)
   (declare (type fixnum num)
-           (type string str1 str2))
-  (format t "~A~A~A" num str1 str2))
+           (type string str1 str2)
+           (type (or character string) char-or-str))
+  (format t "~A~A~A~A" num str1 str2 char-or-str))
 
 ;;; this won't compile because of type mismatch
 ;;; (print-string 1)

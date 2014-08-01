@@ -13,3 +13,5 @@
 (defparameter x 14)
 (proclaim '(type (integer 0 15) x) )
 (setq x 16)                             ; should raise an error
+;;; more info about types
+;;; http://www.sbcl.org/manual/#Getting-Existing-Programs-to-Run
